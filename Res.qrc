@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/rees">
+        <file>images/add.png</file>
+        <file>images/close.png</file>
+        <file>images/help.png</file>
+        <file>images/info.png</file>
+        <file>images/month.png</file>
+        <file>images/new2.png</file>
+        <file>images/open.png</file>
+        <file>images/print.png</file>
+        <file>images/renew.png</file>
+        <file>images/save.png</file>
+        <file>images/sort(1).png</file>
+        <file>images/diagonal-icon.png</file>
+        <file>images/DVD-Ram-icon.png</file>
+        <file>images/price-icon.png</file>
+        <file>images/Ram-icon.png</file>
+        <file>images/Usb-icon.png</file>
+        <file>images/Laptop-icon.png</file>
+        <file>images/Male-Face-icon.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1168</width>
+    <height>745</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="4" column="1">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_from"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Select producer:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Enter ROM size (in GB):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_producer"/>
+       </item>
+       <item row="3" column="0" rowspan="2">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Enter price range 
+(from - to):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_to"/>
+       </item>
+       <item row="2" column="1" colspan="2">
+        <widget class="QSpinBox" name="spinBox_rom"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>350</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Required elements:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget_required">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>255</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	color:indigo;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1168</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCreate_new"/>
+    <addaction name="actionOpen_from_file"/>
+    <addaction name="actionSave_to_file"/>
+    <addaction name="actionSave_close"/>
+    <addaction name="actionRenew_list"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionAdd_laptop"/>
+    <addaction name="actionSort_by_manufacturer"/>
+    <addaction name="actionMost_RAM_and_CD"/>
+    <addaction name="actionIntel_and_13_14_display"/>
+    <addaction name="actionMost_USBs_and_AMD"/>
+    <addaction name="actionAverage_RAM_by_producer"/>
+    <addaction name="action_Price_limits"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionLaptopList_help"/>
+    <addaction name="actionAbout_program"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCreate_new"/>
+   <addaction name="separator"/>
+   <addaction name="actionOpen_from_file"/>
+   <addaction name="separator"/>
+   <addaction name="actionSave_to_file"/>
+   <addaction name="separator"/>
+   <addaction name="actionAdd_laptop"/>
+   <addaction name="separator"/>
+   <addaction name="actionSort_by_manufacturer"/>
+   <addaction name="separator"/>
+   <addaction name="actionMost_RAM_and_CD"/>
+   <addaction name="separator"/>
+   <addaction name="actionIntel_and_13_14_display"/>
+   <addaction name="separator"/>
+   <addaction name="actionMost_USBs_and_AMD"/>
+   <addaction name="separator"/>
+   <addaction name="actionAverage_RAM_by_producer"/>
+   <addaction name="separator"/>
+   <addaction name="action_Price_limits"/>
+   <addaction name="separator"/>
+   <addaction name="actionRenew_list"/>
+   <addaction name="separator"/>
+   <addaction name="actionSave_close"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionCreate_new">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/new2.png</normaloff>:/rees/images/new2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Create new...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen_from_file">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/open.png</normaloff>:/rees/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open from file...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave_close">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/close.png</normaloff>:/rees/images/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionRenew_list">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/renew.png</normaloff>:/rees/images/renew.png</iconset>
+   </property>
+   <property name="text">
+    <string>Renew list</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionSort_by_manufacturer">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/sort(1).png</normaloff>:/rees/images/sort(1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Sort by manufacturer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionMost_RAM_and_CD">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/DVD-Ram-icon.png</normaloff>:/rees/images/DVD-Ram-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Most RAM and CD</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionIntel_and_13_14_display">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/diagonal-icon.png</normaloff>:/rees/images/diagonal-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Intel and 13” – 14” display</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="actionMost_USBs_and_AMD">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/Usb-icon.png</normaloff>:/rees/images/Usb-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Most USBs and AMD</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionAverage_RAM_by_producer">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/Ram-icon.png</normaloff>:/rees/images/Ram-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Average RAM by producer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="action_Price_limits">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/price-icon.png</normaloff>:/rees/images/price-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Price limits</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionAdd_laptop">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/add.png</normaloff>:/rees/images/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add book</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionLaptopList_help">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/help.png</normaloff>:/rees/images/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Laptop List help</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionAbout_program">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/info.png</normaloff>:/rees/images/info.png</iconset>
+   </property>
+   <property name="text">
+    <string>About program</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionSave_to_file">
+   <property name="icon">
+    <iconset resource="Res.qrc">
+     <normaloff>:/rees/images/save.png</normaloff>:/rees/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save to file...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
